@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_Bot')
-API_ID = int(environ.get('24286057', '20389440'))
-API_HASH = environ.get('9ab62f8268f1c5a60b2808f06f2ad2c9', 'a1a06a18eb9153e9dbd447cfd5da2457')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6543802429:AAGfd93pFN-xUtSjGOJ9YJgn2O9-he6uePw')
+API_ID = int(environ.get('24286057')
+API_HASH = environ.get('9ab62f8268f1c5a60b2808f06f2ad2c9')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6543802429:AAGfd93pFN-xutsjgoj9yjgn2o9-he6uepw')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -49,7 +49,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjbots')
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneykamalo.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '0eefb93e1e3ce9470a7033115ceb1bad13a9d674')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', false))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
